@@ -3,115 +3,405 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chemical Company</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>FloChem Trade LLP </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1 id="Logo">
-                <a>
-                    <img src="./assets/images/LOGO.pdf-cropped_page-0001.jpg" alt="Company Logo" class="navbar-logo" width="286" height="86">
-                </a>
-            </h1>
-            <nav>
-                <ul class="navbar">
-                    <li>
-                        <a href="#home"><button type="button" class="btn cta-button">Home</button></a>  
+
+<header>
+  <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="./assets/images/LOGO.pdf-cropped_page-0001.jpg" alt="FloChem Logo" height="80" width="240">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#products">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<section id="home" class="hero-section">
+    <div class="hero-bg-animated"></div>
+    
+    <div id="tsparticles"></div>
+    
+    <div class="hero-overlay"></div>
+    
+    <div class="content fade-in-up">
+        <h1 class="display-3 fw-bold mb-3">Unlock Business Opportunities</h1>
+        <p class="lead mb-4 fs-4">Partner with FloChem for unparalleled global market positioning and high-quality chemical distribution.</p>
+        <div class="d-flex justify-content-center gap-3">
+            <a href="#products" class="btn btn-light cta-button shadow-lg">Our Products</a>
+            <a href="#contact" class="btn btn-outline-light cta-button">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="py-5">
+    <div class="container text-center py-5">
+        <h2 class="display-5 fw-bold mb-4">About Us</h2>
+        <p class="lead">Welcome to FloChem Trade LLP, a leading player in the global chemical industry. We specialize in the import, export and manufacturing of high-quality chemicals to a wide range of industries. With our extensive global network of trusted suppliers and partners, we source premium chemicals from top international manufacturers. We are committed to providing our clients with the highest standards of quality, safety, and reliability. At FloChem Trade LLP, we prioritize customer satisfaction, and our experienced team is dedicated to delivering customized solutions, timely deliveries, and competitive pricing. As a trusted partner in the industry, we adhere to stringent quality control measures and international standards, ensuring the integrity of our products and services.</p>
+    </div>
+</section>
+
+<section id="products" class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5 fade-in-up">
+            <h2 class="display-5 fw-bold text-primary">Our Product Portfolio</h2>
+            <p class="text-muted">High-quality chemical solutions for diverse industrial applications.</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="card product-card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <img src="./assets/images/constructionchem.jpg" alt="Logo" height="150">
+                        </div>
+                        <h4 class="card-title fw-bold">Construction Chemicals</h4>
+                        <ul class="product-list">
+                                    <li>Methyl Hydroxyethyl Cellulose (MHEC)</li>
+                                    <li>Redispersable Polymer Powder (RDP)</li>
+                                    <li>Calcium Formate</li>
+                                    <li>Sodium Gluconate</li>
+                                    <li>Sodium Lignosulphonate</li>
+                                    <li>Ammonium Lignosulphonate</li>
+                                    <li>Sulfonated Nepthalene Powder (SNF-C)</li>
+                                    <li>Starch Ether</li>
+                                    <li>Hydroxy ethyl Cellulose (HEC)</li>
+                                    <li>Carboxymethyl Cellulose (CMC)</li>
+                                    <li>PCE Liquid (WR & SR)</li>
+                                    <li>Pu40 Sealant White and Grey</li>
+                                    <li>Acrylic Acid</li>
+                                    <li>HPEG</li>
+                                    <li>VPEG</li>
+                                    <li>PU Waterproofing Coating</li>          
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card product-card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <div class="icon-box mb-3">
+                            <i class="bi bi-shield-check fs-1 text-primary"></i>
+                        </div>
+                        <h4 class="card-title fw-bold">Biocides</h4>
+                        <ul class="product-list">
+                            <li>Glutaraldehyde – 50%</li>
+                            <li>BKC - 50% & 80%</li>
+                            <li>CMIT – 14%</li>
+                            <li>Gluconic Acid – 50%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card product-card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <img src="./assets/images/water treatment.jpg" alt="Logo" height="150">
+                        </div>
+                        <h4 class="card-title fw-bold">Water Treatment</h4>
+                        <ul class="product-list">
+                            <li>Phosphonates</li>
+                            <li>HEDP / ATMP</li>
+                            <li>DTPMP / PBTCA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card product-card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <div class="icon-box mb-3">
+                            <i class="bi bi-fuel-pump-fill fs-1 text-primary"></i>
+                        </div>
+                        <h4 class="card-title fw-bold">Oil Fields</h4>
+                        <ul class="product-list">
+                            <li>Benzotriazole (Needle/Granular)</li>
+                            <li>Tolytriazole</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card product-card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <div class="icon-box mb-3">
+                            <i class="bi bi-filter-circle fs-1 text-primary"></i>
+                        </div>
+                        <h4 class="card-title fw-bold">Flocculants</h4>
+                        <ul class="product-list">
+                            <li>DADMAC 65%</li>
+                            <li>Polydadmac 40%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card product-card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <div class="icon-box mb-3">
+                            <i class="bi bi-capsule fs-1 text-primary"></i>
+                        </div>
+                        <h4 class="card-title fw-bold">Chelating Agents</h4>
+                        <ul class="product-list">
+                            <li>EDTA Disodium</li>
+                            <li>EDTA Acid</li>
+                            <li>EDTA Tetrasodium</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="card product-card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <img src="./assets/images/dyeing.jpeg" alt="Logo" height="150">
+                        </div>
+                        <h4 class="card-title fw-bold">Textile Chemicals</h4>
+                        <ul class="product-list">
+                            <li>Sequestering Agents</li>
+                            <li>Mercerizing Agent</li>
+                            <li>Wetting Agent</li>
+                            <li>Scouring Agent</li>
+                            <li>Defoamers</li>
+                            <li>Neutralizers</li>
+                            <li>Peroxide Stabilizers</li>
+                            <li>Anti Back Staining Agent</li>
+                            <li>Demineralizing Agent</li>
+                            <li>Leveling Agents</li>   
+                            <li>Dye Fixing Agents</li>
+                            <li>Washing Off Agents</li>
+                            <li>Dispersing Agent</li>
+                            <li>Printing Paste</li>
+                            <li>Silver Paste</li>
+                            <li>Gold Paste</li>
+                            <li>Binder</li>
+                            <li>PE Softener</li>    
+                            <li>Silicone Softener</li>   
+                            <li>Cationic Softener</li>               
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card product-card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <img src="./assets/images/paints.jpg" alt="Logo" height="150">
+                        </div>
+                        <h4 class="card-title fw-bold">Paint & Coating's</h4>
+                        <ul class="product-list">
+                            <li>Sodium Polyacrylate 25% / 35% / 45%</li>
+                            <li>Sodium Co-polymer acrylate</li>
+                            <li>Silicone Deformer - 10% / 20% / 30%</li>
+                            <li>CMIT/MIT</li>
+                            <li>CMIT/MIT advance</li>
+                            <li>Soluble Benzisothiazolinone</li>
+                            <li>Carbendazim,noctylthiazolinoe and diuron emulsion</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="py-5 bg-white">
+    <div class="container py-5">
+        <div class="row justify-content-center text-center mb-5 fade-in-up">
+            <div class="col-lg-8">
+                <h2 class="display-5 fw-bold text-primary">Contact Details</h2>
+                <p class="lead text-muted">Direct lines to our logistics and sales teams for international and domestic trade inquiries.</p>
+            </div>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+                <div class="info-box shadow-sm p-4 rounded-4 border-top border-primary border-4 h-100 text-center">
+                    <div class="info-icon mb-3">
+                        <i class="bi bi-geo-alt-fill fs-2 text-primary"></i>
+                    </div>
+                    <h5 class="fw-bold">Registered Office</h5>
+                    <p class="text-muted">Flochem Trade LLP,<br>
+                    Car Service Centre (Garage),<br>
+                    Opp Yogi Tower, Link Road,<br>
+                    Borivali West, Mumbai - 400091</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="info-box shadow-sm p-4 rounded-4 border-top border-primary border-4 h-100 text-center">
+                    <div class="info-icon mb-3">
+                        <i class="bi bi-envelope-check-fill fs-2 text-primary"></i>
+                    </div>
+                    <h5 class="fw-bold">Business Inquiries</h5>
+                    <p class="mb-1 text-muted">Primary Email:</p>
+                    <a href="mailto:Vedantparmar@flochem.in" class="text-decoration-none fw-bold text-dark">Vedantparmar@flochem.in</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="info-box shadow-sm p-4 rounded-4 border-top border-primary border-4 h-100 text-center">
+                    <div class="info-icon mb-3">
+                        <i class="bi bi-telephone-outbound-fill fs-2 text-primary"></i>
+                    </div>
+                    <h5 class="fw-bold">Direct Support</h5>
+                    <p class="mb-1 text-muted">Mobile / WhatsApp:</p>
+                    <a href="tel:+918169127497" class="text-decoration-none fw-bold fs-5 text-dark">+91 8169127497</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer-section pt-5 pb-3">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-logo mb-3">
+                    <img src="./assets/images/LOGO.pdf-cropped_page-0001.jpg" alt="FloChem Logo" height="60" class="rounded bg-white p-1">
+                </div>
+                <p class="footer-text small">
+                    FloChem Trade LLP is a leading global distributor of high-quality industrial chemicals. We specialize in sourcing, export and manufacturing of premium chemical products.
+                </p>
+                <div class="d-flex gap-3 mt-4">
+                    <a href="https://wa.me/918169127497" class="social-icon"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6">
+                <h5 class="fw-bold mb-4">Navigation</h5>
+                <ul class="list-unstyled footer-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h5 class="fw-bold mb-4">Key Categories</h5>
+                <ul class="list-unstyled footer-nav">
+                    <li><a href="#products">Construction Chemicals</a></li>
+                    <li><a href="#products">Water Treatment</a></li>
+                    <li><a href="#products">Biocides</a></li>
+                    <li><a href="#products">Chelating Agents</a></li>
+                    <li><a href="#products">Paint & Coating's</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h5 class="fw-bold mb-4">Get in Touch</h5>
+                <ul class="list-unstyled footer-contact small">
+                    <li class="mb-3 d-flex align-items-start">
+                        <i class="bi bi-geo-alt-fill text-primary me-2"></i>
+                        <span>Flochem Trade LLP,<br>
+                        Car Service Centre (Garage),<br>
+                        Opp Yogi Tower, Link Road,<br>
+                        Borivali West, Mumbai - 400091</p></span>
                     </li>
-                    <li>
-                        <a href="#about"><button type="button" class="btn cta-button">About Us</button></a>
+                    <li class="mb-3 d-flex align-items-center">
+                        <i class="bi bi-envelope-fill text-primary me-2"></i>
+                        <a href="mailto:Vedantparmar@flochem.in">Vedantparmar@flochem.in</a>
                     </li>
-                    <li>
-                        <a href="#services"><button type="button" class="btn cta-button">Services</button></a>
-                    </li>
-                    <li>
-                        <a href="#contact"><button type="button" class="btn cta-button">Contact</button></a>
+                    <li class="mb-3 d-flex align-items-center">
+                        <i class="bi bi-telephone-fill text-primary me-2"></i>
+                        <a href="tel:+918169127497">+91 8169127497</a>
                     </li>
                 </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section id="home" class="hero-section">
-        <div class="container col-xxl-8 px-4">
-            <div class="row flex-lg-row-reverse align-items-center g-5">
-              <div class="col-10 col-sm-8 col-lg-6">
-                <img src="assets/images/headerphoto.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-              </div>
-              <div class="col-lg-6">
-                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Unlock Business Opportunities and Enhance Your Global Market Positioning</h1>
-                <p class="lead">Maximize your business potential with our proven approach by partnering with us for unparalleled success.</p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <a href="#services" class="btn btn-light cta-button">Our Services</a>
-                </div>
-              </div>
             </div>
         </div>
-    </section>
 
-    <section id="about">
-        <div class="px-4 py-5 my-2 text-center">
-            <h1 class="display-5 fw-bold text-body-emphasis">About Us</h1>
-            <div class="col-lg-8 mx-auto text-justify">
-              <p class="lead mb-4">Welcome to FloChem, a leading player in the global chemical trading industry. We specialize in the import and distribution of high-quality chemicals to a wide range of industries, including manufacturing, pharmaceuticals, agriculture, and more. With our extensive global network of trusted suppliers and partners, we source premium chemicals from top international manufacturers. We are committed to providing our clients with the highest standards of quality, safety, and reliability. At FloChem, we prioritize customer satisfaction, and our experienced team is dedicated to delivering customized solutions, timely deliveries, and competitive pricing. As a trusted partner in the industry, we adhere to stringent quality control measures and international standards, ensuring the integrity of our products and services.</p>
+        <hr class="mt-5 mb-4 border-secondary opacity-25">
+
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="footer-text small mb-0">&copy; 2026 FloChem Trade LLP </p>
             </div>
-        </div>
-    </section>
-
-    <section id="services">
-        <div class="container px-4 pt-5" id="featured-3">
-            <h2 class="pb-2 border-bottom">Services</h2>
-            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-              <div class="feature col">
-                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                  <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
-                </div>
-                <h3 class="fs-2 text-body-emphasis">Import & Export</h3>
-                <p>Innovating new chemical processes and products for various industries.</p>
-              </div>
-              <div class="feature col">
-                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                  <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
-                </div>
-                <h3 class="fs-2 text-body-emphasis">Featured title2</h3>
-                <p>2 Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-              </div>
-              <div class="feature col">
-                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                  <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
-                </div>
-                <h3 class="fs-2 text-body-emphasis">Featured title3</h3>
-                <p>3 Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-              </div>
-            </div>
-          </div>
-    </section>
-
-    <section id="contact">
-        <div class="container my-5 contact-us rounded-3">
-            <div class="p-5 text-center bg-info-subtle rounded-3">
-                <h1 class="text-body-emphasis">Contact Us</h1>
-                <p class="col-lg-8 mx-auto fs-5 text-muted">
-                    Get in touch with us for more information about our products and services.
-                </p>
-                <div class="d-inline-flex gap-2 mb-1">
-                    <button class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" type="button">
-                        <a href="mailto:Test@Flochem.com" class="text-white">Email Us</a>
-                    </button>
+            <div class="col-md-6 text-center text-md-end">
+                <div class="footer-legal small">
+                    <a href="#" class="me-3">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
                 </div>
             </div>
         </div>
-    </section>
-    
-    </section>
+    </div>
+</footer>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 FloChem All Rights Reserved.</p>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+
+<script>
+    tsParticles.load("tsparticles", {
+        fullScreen: { enable: false },
+        fpsLimit: 60,
+        interactivity: {
+            events: {
+                onHover: { enable: true, mode: "grab" },
+                onClick: { enable: true, mode: "push" }
+            },
+            modes: {
+                grab: { distance: 180, links: { opacity: 0.4 } },
+                push: { quantity: 4 }
+            }
+        },
+        particles: {
+            color: { value: "#ffffff" },
+            links: {
+                color: "#ffffff",
+                distance: 150,
+                enable: true,
+                opacity: 0.2,
+                width: 1
+            },
+            move: {
+                enable: true,
+                speed: 0.8,
+                direction: "none",
+                outModes: { default: "out" }
+            },
+            number: {
+                density: { enable: true, area: 800 },
+                value: 60 
+            },
+            opacity: { value: 0.4 },
+            shape: { type: "circle" },
+            size: { value: { min: 1, max: 3 } }
+        }
+    });
+</script>
 </body>
 </html>
